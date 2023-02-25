@@ -5,11 +5,14 @@ let i=0
 while (i<=4000){
     console.log("yummycode yum yum I love eating code");
    i= i+1000
+   //create the div
    let loop=document.createElement("div");
-loop.style.width=100;
-loop.style.height=100;
-loop.innerHTML=i
-document.body.appendChild(loop);
+    // give sizes for the div
+    loop.style.width=100;
+    loop.style.height=100;
+    loop.innerHTML=i
+//have the document bring forth the loop
+    document.body.appendChild(loop);
 
 }
 

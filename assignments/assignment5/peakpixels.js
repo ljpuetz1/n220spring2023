@@ -9,6 +9,12 @@ let div = document.createElement("div");
     div.style.height=x+"px";
     div.style.width=x+"px"
     document.body.appendChild(div);
+    onclick(x*1.1)
+
+    function big(){
+        document.getElementById("div_peak")
+    }
+    big.addEventListener("click",)
 
     
 
