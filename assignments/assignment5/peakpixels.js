@@ -3,18 +3,20 @@ var x=100
 //create an object for the div
 
 
-let div = document.createElement("div");
-    div.id = "div_peak" ;
-    div.style="background-color:green;";
-    div.style.height=x+"px";
-    div.style.width=x+"px"
-    document.body.appendChild(div);
-    onclick(x*1.1)
+let bigDiv= document.createElement("div");{
+    bigDiv.id='beBigDiv'
+    bigDiv.style="background-color:green;";
+    bigDiv.style.height=x+"px";
+    bigDiv.style.width=x+"px"
+    document.body.appendChild(bigDiv);
 
-    function big(){
-        document.getElementById("div_peak")
-    }
-    big.addEventListener("click",)
+}
+var beBigDiv=document.getElementById('beBigDiv');
+beBigDiv.style.cursor='pointer'
+beBigDiv.onclick=function(){
+    bigDiv.onclick(x=x*1.1);
+}
+
 
     
 
