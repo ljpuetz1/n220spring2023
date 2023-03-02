@@ -1,76 +1,119 @@
-let changeOne =document.getElementById("divOne");
-let changeTwo=document.getElementById("divTwo");
-let changeThree=document.getElementById("divThree");
-let changeFour=document.getElementById("divFour");
-let changeFive=document.getElementById("divFive");
-let changeSix=document.getElementById("divSix");
+let changeOne =document.getElementById('divOne');
+let changeTwo=document.getElementById('divTwo');
+let changeThree=document.getElementById('divThree');
+let changeFour=document.getElementById('divFour');
+let changeFive=document.getElementById('divFive');
+let changeSix=document.getElementById('divSix');
 
-let numbers=["divOne","divTwo","divThree","divFour","divFive","divSix"]
-
-let i=0
-for(let i=0;i<5;i++){
-numbers[0]//divOne
-numbers[1]//divTwo
-numbers[2]//divThree
-numbers[3]//divFour
-numbers[4]//divFive
-numbers[5]//divSix
+function move(){
+    var divMove= document.createElement("div");//creates a new div ;)
+    divMove.addEventListener("click",move);
+    this.append(divMove);
+    this.removeEventListener("click",move);
 }
+
 
 //first div click
-function runClickOne(){
-changeOne.body.background("red");
-changeTwo.body.background("white");
-changeThree.body.background("white");
-changeFour.body.background("white");
-changeFive.body.background("white");
-changeSix.body.background("white");
-}
+
+    
+    changeOne.addEventListener('click',function(move){
+        let divOne= document.getElementById('divOne');
+        divOne.style.background="red";
+        let divTwo= document.getElementById('divTwo');
+        divTwo.style.background="white";
+        let divThree= document.getElementById('divThree');
+        divThree.style.background="white";
+        let divFour= document.getElementById('divFour');
+        divFour.style.background="white";
+        let divFive= document.getElementById('divFive');
+        divFive.style.background="white";
+        let divSix= document.getElementById('divSix');
+        divSix.style.background="white";
+    })
+    changeOne.addEventListener('click',function(move){
+
+
+    })
+
+    
+    
+
+
 //second div click
-function runClickTwo(){
-    changeOne.body.background("white");
-    changeTwo.body.background("red");
-    changeThree.body.background("white");
-    changeFour.body.background("white");
-    changeFive.body.background("white");
-    changeSix.body.background("white");
-    }
+changeTwo.addEventListener('click',function(move){
+    let divOne= document.getElementById('divOne');
+    divOne.style.background="white";
+    let divTwo= document.getElementById('divTwo');
+    divTwo.style.background="red";
+    let divThree= document.getElementById('divThree');
+    divThree.style.background="white";
+    let divFour= document.getElementById('divFour');
+    divFour.style.background="white";
+    let divFive= document.getElementById('divFive');
+    divFive.style.background="white";
+    let divSix= document.getElementById('divSix');
+    divSix.style.background="white";
+
+})
 //third div click
-function runClickThree(){
-    changeOne.body.background("white");
-    changeTwo.body.background("white");
-    changeThree.body.background("red");
-    changeFour.body.background("white");
-    changeFive.body.background("white");
-    changeSix.body.background("white");
-    }
-//fourth div clikc
-function runClickFour(){
-    changeOne.body.background("white");
-    changeTwo.body.background("white");
-    changeThree.body.background("white");
-    changeFour.body.background("red");
-    changeFive.body.background("white");
-    changeSix.body.background("white");
-    }
-//fifth div click
-function runClickFive(){
-    changeOne.body.background("white");
-    changeTwo.body.background("white");
-    changeThree.body.background("white");
-    changeFour.body.background("white");
-    changeFive.body.background("red");
-    changeSix.body.background("white");
-    }
-//sixth div clikc
-function runClickSix(){
-    changeOne.style.backgroundColor="white";
-    changeTwo.style.backgroundColor="white";
-    changeThree.body.background("white");
-    changeFour.body.background("white");
-    changeFive.body.background("white");
-    changeSix.body.background("red");
-    }
+changeThree.addEventListener('click',function(move){
+    let divOne= document.getElementById('divOne');
+    divOne.style.background="white";
+    let divTwo= document.getElementById('divTwo');
+    divTwo.style.background="white";
+    let divThree= document.getElementById('divThree');
+    divThree.style.background="red";
+    let divFour= document.getElementById('divFour');
+    divFour.style.background="white";
+    let divFive= document.getElementById('divFive');
+    divFive.style.background="white";
+    let divSix= document.getElementById('divSix');
+    divSix.style.background="white";
+})
+
+changeFour.addEventListener('click',function(move){
+    let divOne= document.getElementById('divOne');
+    divOne.style.background="white";
+    let divTwo= document.getElementById('divTwo');
+    divTwo.style.background="white";
+    let divThree= document.getElementById('divThree');
+    divThree.style.background="white";
+    let divFour= document.getElementById('divFour');
+    divFour.style.background="red";
+    let divFive= document.getElementById('divFive');
+    divFive.style.background="white";
+    let divSix= document.getElementById('divSix');
+    divSix.style.background="white";
+})
+changeFive.addEventListener('click',function(move){
+    let divOne= document.getElementById('divOne');
+    divOne.style.background="white";
+    let divTwo= document.getElementById('divTwo');
+    divTwo.style.background="white";
+    let divThree= document.getElementById('divThree');
+    divThree.style.background="white";
+    let divFour= document.getElementById('divFour');
+    divFour.style.background="white";
+    let divFive= document.getElementById('divFive');
+    divFive.style.background="red";
+    let divSix= document.getElementById('divSix');
+    divSix.style.background="white";
+})
+changeSix.addEventListener('click',function(move){
+    let divOne= document.getElementById('divOne');
+    divOne.style.background="white";
+    let divTwo= document.getElementById('divTwo');
+    divTwo.style.background="white";
+    let divThree= document.getElementById('divThree');
+    divThree.style.background="white";
+    let divFour= document.getElementById('divFour');
+    divFour.style.background="white";
+    let divFive= document.getElementById('divFive');
+    divFive.style.background="white";
+    let divSix= document.getElementById('divSix');
+    divSix.style.background="red";
+})
+
 
 
 
