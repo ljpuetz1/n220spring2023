@@ -20,6 +20,7 @@ changeButton.onclick=function(){
     if(count > 3) {
         //change inner text
         changeButton.innerHTML = "NEW TEXT"
+        
     }
    // changeButton.onclick(this.innerHTML="reveal");
 

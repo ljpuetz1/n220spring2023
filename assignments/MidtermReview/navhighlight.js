@@ -4,19 +4,15 @@ let changeThree=document.getElementById('divThree');
 let changeFour=document.getElementById('divFour');
 let changeFive=document.getElementById('divFive');
 let changeSix=document.getElementById('divSix');
-
-function move(){
-    var divMove= document.createElement("div");//creates a new div ;)
-    divMove.addEventListener("click",move);
-    this.append(divMove);
-    this.removeEventListener("click",move);
+let clickedText=document.getElementById('selectedItem');
+    function move(){
+     var divMove= document.createElement("div");//creates a new div ;)
+     divMove.addEventListener("click",move);
+     this.append(divMove);
+        this.removeEventListener("click",move);
 }
-
-
 //first div click
-
-    
-    changeOne.addEventListener('click',function(move){
+    changeOne.addEventListener('click',function(){
         let divOne= document.getElementById('divOne');
         divOne.style.background="red";
         let divTwo= document.getElementById('divTwo');
@@ -29,18 +25,10 @@ function move(){
         divFive.style.background="white";
         let divSix= document.getElementById('divSix');
         divSix.style.background="white";
+        clickedText.innerHTML=divOne.innerHTML;
     })
-    changeOne.addEventListener('click',function(move){
-
-
-    })
-
-    
-    
-
-
 //second div click
-changeTwo.addEventListener('click',function(move){
+changeTwo.addEventListener('click',function(){
     let divOne= document.getElementById('divOne');
     divOne.style.background="white";
     let divTwo= document.getElementById('divTwo');
@@ -53,10 +41,10 @@ changeTwo.addEventListener('click',function(move){
     divFive.style.background="white";
     let divSix= document.getElementById('divSix');
     divSix.style.background="white";
-
+    clickedText.innerHTML=divTwo.innerHTML;
 })
 //third div click
-changeThree.addEventListener('click',function(move){
+changeThree.addEventListener('click',function(){
     let divOne= document.getElementById('divOne');
     divOne.style.background="white";
     let divTwo= document.getElementById('divTwo');
@@ -69,9 +57,9 @@ changeThree.addEventListener('click',function(move){
     divFive.style.background="white";
     let divSix= document.getElementById('divSix');
     divSix.style.background="white";
+    clickedText.innerHTML=divThree.innerHTML;
 })
-
-changeFour.addEventListener('click',function(move){
+changeFour.addEventListener('click',function(){
     let divOne= document.getElementById('divOne');
     divOne.style.background="white";
     let divTwo= document.getElementById('divTwo');
@@ -84,8 +72,9 @@ changeFour.addEventListener('click',function(move){
     divFive.style.background="white";
     let divSix= document.getElementById('divSix');
     divSix.style.background="white";
+    clickedText.innerHTML=divFour.innerHTML;
 })
-changeFive.addEventListener('click',function(move){
+changeFive.addEventListener('click',function(){
     let divOne= document.getElementById('divOne');
     divOne.style.background="white";
     let divTwo= document.getElementById('divTwo');
@@ -98,8 +87,9 @@ changeFive.addEventListener('click',function(move){
     divFive.style.background="red";
     let divSix= document.getElementById('divSix');
     divSix.style.background="white";
+    clickedText.innerHTML=divFive.innerHTML;
 })
-changeSix.addEventListener('click',function(move){
+changeSix.addEventListener('click',function(){
     let divOne= document.getElementById('divOne');
     divOne.style.background="white";
     let divTwo= document.getElementById('divTwo');
@@ -112,6 +102,7 @@ changeSix.addEventListener('click',function(move){
     divFive.style.background="white";
     let divSix= document.getElementById('divSix');
     divSix.style.background="red";
+    clickedText.innerHTML=divSix.innerHTML;
 })
 
 
