@@ -1,0 +1,4 @@
+function vowel(){
+    if()
+    
+}
