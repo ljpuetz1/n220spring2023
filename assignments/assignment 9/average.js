@@ -1,3 +1,4 @@
+
 var numbers=[];
 
 function run(){
@@ -12,7 +13,9 @@ inputValue=document.getElementById('valNum').value;
         total+=x;
 
     }
-    
+
+    document.getElementById('averageNum').innerHTML="The average number:"+total/splitstring.length
+    document.getElementById('sum').innerHTML="The sum of values:"+total
     console.log(total);
     console.log(numbers);
 }
