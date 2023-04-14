@@ -16,13 +16,12 @@ console.log(makeDiv.backgroundColor);
 }
 */
 let colorChanger=document.getElementById('colorMixer')
-
-
-  
-function colorMixer(event) {
     let red=50
     let blue=50
     let green=50
+
+function colorMixer(event) {
+    
     
     let tellRed = event.target.getAttribute("data-number");
     tellRed=Number(tellRed);
@@ -33,11 +32,19 @@ function colorMixer(event) {
     let tellGreen = event.target.getAttribute("data-response");
     tellGreen=Number(tellGreen);
 
-    console.log("red:"+tell);
-    console
-    let newRed=red+tell
+    let newBlue=blue+tellBlue
+    let newGreen=green+tellGreen
+    let newRed=red+tellRed
+    colorChanger.style.backgroundColor=`rgb(${newRed},${newGreen},${newBlue})`;
+
     console.log(newRed);
+    console.log(newBlue);
+    console.log(newGreen);
+    console.log(colorChanger.style.backgroundColor)
+
+    
     }
+
 
     /*
 function changeBlue(event){
