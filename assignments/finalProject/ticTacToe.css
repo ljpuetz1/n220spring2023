@@ -1,0 +1,89 @@
+.title {
+  font-size: larger;
+}
+.rules {
+  font-size: medium;
+}
+.topMain {
+  display: flex;
+  padding-top: 100px;
+}
+.midMain {
+  display: flex;
+}
+.botMain {
+  display: flex;
+}
+
+.topLeft {
+  height: 75px;
+  width: 75px;
+  background-color: bisque;
+  border: 1px solid black;
+  font-size: 70px;
+  text-align: center;
+}
+.topMid {
+  height: 75px;
+  width: 75px;
+  background-color: plum;
+  border: 1px solid black;
+  font-size: 70px;
+  text-align: center;
+}
+.topRight {
+  height: 75px;
+  width: 75px;
+  background-color: bisque;
+  border: 1px solid black;
+  font-size: 70px;
+  text-align: center;
+}
+.midLeft {
+  height: 75px;
+  width: 75px;
+  background-color: plum;
+  border: 1px solid black;
+  font-size: 70px;
+  text-align: center;
+}
+.midMid {
+  height: 75px;
+  width: 75px;
+  background-color: bisque;
+  border: 1px solid black;
+  font-size: 70px;
+  text-align: center;
+}
+.midRight {
+  height: 75px;
+  width: 75px;
+  background-color: plum;
+  border: 1px solid black;
+  font-size: 70px;
+  text-align: center;
+}
+.botLeft {
+  height: 75px;
+  width: 75px;
+  background-color: bisque;
+  border: 1px solid black;
+  font-size: 70px;
+  text-align: center;
+}
+.botMid {
+  height: 75px;
+  width: 75px;
+  background-color: plum;
+  border: 1px solid black;
+  font-size: 70px;
+  text-align: center;
+}
+.botRight {
+  height: 75px;
+  width: 75px;
+  background-color: bisque;
+  border: 1px solid black;
+  font-size: 70px;
+  text-align: center;
+}

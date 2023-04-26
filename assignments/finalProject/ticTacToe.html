@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="ticTacToe.css" />
+  </head>
+  <body>
+    <div class="title">Tic Tac Toe!</div>
+    <div class="rules">
+      Press to play, get three in a row to win. Left click to use an O, right
+      click to place an X.
+    </div>
+    <button id="restart">Restart</button>
+    <div class="topMain">
+      <div class="topLeft" id="box1" data-board="1"></div>
+      <div class="topMid" id="box2" data-board="2"></div>
+      <div class="topRight" id="box3" data-board="3"></div>
+    </div>
+    <div class="midMain">
+      <div class="midLeft" id="box4" data-board="4"></div>
+      <div class="midMid" id="box5" data-board="5"></div>
+      <div class="midRight" id="box6" data-board="6"></div>
+    </div>
+    <div class="botMain">
+      <div class="botLeft" id="box7" data-board="7"></div>
+      <div class="botMid" id="box8" data-board="8"></div>
+      <div class="botRight" id="box9" data-board="9"></div>
+    </div>
+
+    <div class="win" id="youWon"></div>
+    <div class="tie" id="youTie"></div>
+
+    <script src="ticTacToe.js"></script>
+  </body>
+</html>
