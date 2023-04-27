@@ -4,6 +4,24 @@
 .rules {
   font-size: medium;
 }
+.board {
+  padding-top: 100px;
+}
+
+.row {
+  display: flex;
+}
+.cube {
+  background-color: lightgreen;
+  height: 75px;
+  width: 75px;
+  border: 1px solid black;
+  font-size: 70px;
+  text-align: center;
+}
+
+/*
+didnt like how I formated this, keeping if i need later
 .topMain {
   display: flex;
   padding-top: 100px;
@@ -87,3 +105,4 @@
   font-size: 70px;
   text-align: center;
 }
+*/

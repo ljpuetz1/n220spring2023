@@ -9,25 +9,25 @@
   </head>
   <body>
     <div class="title">Tic Tac Toe!</div>
-    <div class="rules">
-      Press to play, get three in a row to win. Left click to use an O, right
-      click to place an X.
-    </div>
+    <div class="rules">Press to play, get three in a row to win.</div>
+
     <button id="restart">Restart</button>
-    <div class="topMain">
-      <div class="topLeft" id="box1" data-board="1"></div>
-      <div class="topMid" id="box2" data-board="2"></div>
-      <div class="topRight" id="box3" data-board="3"></div>
-    </div>
-    <div class="midMain">
-      <div class="midLeft" id="box4" data-board="4"></div>
-      <div class="midMid" id="box5" data-board="5"></div>
-      <div class="midRight" id="box6" data-board="6"></div>
-    </div>
-    <div class="botMain">
-      <div class="botLeft" id="box7" data-board="7"></div>
-      <div class="botMid" id="box8" data-board="8"></div>
-      <div class="botRight" id="box9" data-board="9"></div>
+    <div class="board">
+      <div class="row">
+        <div class="cube" data-answer="1" onclick="check(event)"></div>
+        <div class="cube" data-answer="2" onclick="check(event)"></div>
+        <div class="cube" data-answer="3" onclick="check(event)"></div>
+      </div>
+      <div class="row">
+        <div class="cube" data-answer="4" onclick="check(event)"></div>
+        <div class="cube" data-answer="5" onclick="check(event)"></div>
+        <div class="cube" data-answer="6" onclick="check(event)"></div>
+      </div>
+      <div class="row">
+        <div class="cube" data-answer="7" onclick="check(event)"></div>
+        <div class="cube" data-answer="8" onclick="check(event)"></div>
+        <div class="cube" data-answer="9" onclick="check(event)"></div>
+      </div>
     </div>
 
     <div class="win" id="youWon"></div>
