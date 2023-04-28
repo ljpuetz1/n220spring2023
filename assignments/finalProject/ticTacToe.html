@@ -10,23 +10,24 @@
   <body>
     <div class="title">Tic Tac Toe!</div>
     <div class="rules">Press to play, get three in a row to win.</div>
+    <div id="Win"></div>
 
-    <button id="restart">Restart</button>
+    <button id="restart" onclick="refreshPage()">Restart</button>
     <div class="board">
       <div class="row">
+        <div class="cube" data-answer="0" onclick="check(event)"></div>
         <div class="cube" data-answer="1" onclick="check(event)"></div>
         <div class="cube" data-answer="2" onclick="check(event)"></div>
-        <div class="cube" data-answer="3" onclick="check(event)"></div>
       </div>
       <div class="row">
+        <div class="cube" data-answer="3" onclick="check(event)"></div>
         <div class="cube" data-answer="4" onclick="check(event)"></div>
         <div class="cube" data-answer="5" onclick="check(event)"></div>
-        <div class="cube" data-answer="6" onclick="check(event)"></div>
       </div>
       <div class="row">
+        <div class="cube" data-answer="6" onclick="check(event)"></div>
         <div class="cube" data-answer="7" onclick="check(event)"></div>
         <div class="cube" data-answer="8" onclick="check(event)"></div>
-        <div class="cube" data-answer="9" onclick="check(event)"></div>
       </div>
     </div>
 
